@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All rights reserved"
+
+[[mods]]
+modId="createautomatamod"
+version="${file.jarVersion}"
+displayName="Create: Automata"
+logoFile="assets/createautomatamod/icon.png"
+credits="Derek Tirado"
+authors="Derek Tirado"
+description='''
+A NeoForge mod for Minecraft 1.20+ that adds automaton entities and recharging stations.
+'''
+
+[[dependencies.createautomatamod]]
+modId="neoforge"
+type="required"
+versionRange="[20.4,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.createautomatamod]]
+modId="minecraft"
+type="required"
+versionRange="[1.20.4]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.createautomatamod]]
+modId="create"
+type="required"
+versionRange="[0.5.1.i,)"
+ordering="NONE"
+side="BOTH"

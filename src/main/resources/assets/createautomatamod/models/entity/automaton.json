@@ -1,0 +1,32 @@
+{
+    "credit": "Blockbench",
+    "format_version": "3.8.4",
+    "meta": {
+        "model_format": "free",
+        "box_uv": true,
+        "outliner_exclusive_parents": false,
+        "texture_height": 32,
+        "texture_width": 64,
+        "visible_boxstacks": true
+    },
+    "name": "automaton",
+    "resolution": {
+        "height": 32,
+        "width": 64
+    },
+    "elements": [
+        {
+            "from": [0, 0, 0],
+            "to": [16, 16, 16],
+            "name": "body",
+            "faces": {
+                "north": {"uv": [0, 0], "texture": "#texture"},
+                "east": {"uv": [0, 0], "texture": "#texture"},
+                "south": {"uv": [0, 0], "texture": "#texture"},
+                "west": {"uv": [0, 0], "texture": "#texture"},
+                "up": {"uv": [0, 0], "texture": "#texture"},
+                "down": {"uv": [0, 0], "texture": "#texture"}
+            }
+        }
+    ]
+}

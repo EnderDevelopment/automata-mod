@@ -1,0 +1,42 @@
+plugins {
+    id 'net.neoforgedmods.fgpp' version '1.0.0'
+    id 'net.neoforgedmods.fgpp.neoforge'
+}
+
+group 'com.derektirado7'
+version '1.0.0'
+archivesBaseName = 'createautomatamod'
+
+repositories {
+    maven {
+        name = 'NeoForge'
+        url = 'https://maven.neoforged.net/releases'
+    }
+    mavenCentral()
+}
+
+ext.neoGradle {
+    mappingsChannel = 'official'
+    mappings = '1.20.4'
+    runner {
+        version = '1.20.4'
+        side = 'CLIENT'
+    }
+    ide {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fg.deobf('net.neoforged:neoforge:20.4.189-beta')
+    implementation fg.deobf('net.minecraft:neoforge:20.4.189-beta')
+    implementation fg.deobf('net.minecraftforge:forge:1.20.4-48.0.10')
+    implementation fg.deobf('net.minecraftforge:minecraft:1.20.4-48.0.10')
+}
+
+processResources {
+    inputs.property 'version', project.version
+    inputs.property 'mcVersion', ext.neoGradle_runner_version
+    inputs.property 'mappings_channel', ext.neoGradle_mappingsChannel
+    inputs.property 'mappings_version', ext.neoGradle_mappings
+}
